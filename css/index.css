@@ -63,6 +63,11 @@ img {
   position: absolute;
 }
 
+a {
+  text-decoration: underline;
+  color: black; 
+}
+
 #gojo {
   top: calc(0.1*var(--width)); 
   left: calc(0.1*var(--width)); 
