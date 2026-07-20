@@ -7,7 +7,7 @@
   background-color: #f7f7f5; 
   font-family: "consolas"; 
   scroll-behavior: smooth; 
-  /* outline: 2px solid black;  */
+  /* outline: 2px solid black;  */ 
 }
 
 #home, #about, #contact {
@@ -27,6 +27,13 @@ h1 {
   text-align: center;
   font-size: 4vw; 
   font-weight: 300; 
+
+  text-decoration: underline 0.1em rgba(0,0,0,0); 
+  transition: text-decoration-color 300ms; 
+}
+
+h1:hover {
+  text-decoration: underline 0.1em rgba(0,0,0,1);
 }
 
 h2 {
@@ -51,9 +58,12 @@ p {
   line-height: 1vh; 
 }
 
+img {
+  z-index: 10; 
+  position: absolute;
+}
+
 #gojo {
-  z-index: 10;
-  position: absolute; 
   top: calc(0.1*var(--width)); 
   left: calc(0.1*var(--width)); 
 
@@ -65,8 +75,6 @@ p {
 }
 
 #head {
-  z-index: 10;
-  position: absolute;
   top: calc(0.25*var(--width));
   left: calc(0.75*var(--width));
 
@@ -77,8 +85,6 @@ p {
 }
 
 #gojo2 {
-  z-index: 10;
-  position: absolute;
   top: calc(0.8*var(--width));
   left: calc(0.2*var(--width));
 
@@ -90,8 +96,6 @@ p {
 }
 
 #koi {
-  z-index: 10;
-  position: absolute;
   top: calc(0.95*var(--width));
   left: calc(0.65*var(--width));
 
@@ -103,8 +107,6 @@ p {
 }
 
 #jelly {
-  z-index: 10;
-  position: absolute;
   top: calc(1.2*var(--width));
   left: calc(0.15*var(--width));
 
@@ -116,8 +118,6 @@ p {
 }
 
 #pochacco {
-  z-index: 10;
-  position: absolute;
   top: calc(1.4*var(--width));
   left: calc(0.65*var(--width));
 
@@ -129,8 +129,6 @@ p {
 }
 
 #heart {
-  z-index: 10;
-  position: absolute;
   top: calc(0.05*var(--width));
   left: calc(0.55*var(--width));
 
@@ -142,8 +140,6 @@ p {
 }
 
 #star {
-  z-index: 10;
-  position: absolute;
   top: calc(0.35*var(--width));
   left: calc(0.3*var(--width));
 
@@ -155,8 +151,6 @@ p {
 }
 
 #music {
-  z-index: 10;
-  position: absolute;
   top: calc(0.4*var(--width));
   left: calc(0.6*var(--width));
 
@@ -168,8 +162,6 @@ p {
 }
 
 #star1 {
-  z-index: 10;
-  position: absolute;
   top: calc(1.05*var(--width));
   left: calc(0.35*var(--width));
 
@@ -181,8 +173,6 @@ p {
 }
 
 #mssg {
-  z-index: 10;
-  position: absolute;
   top: calc(1.40*var(--width));
   left: calc(0.2*var(--width));
 
