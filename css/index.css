@@ -1,11 +1,12 @@
 :root {
   --height: 95vh; 
-  --width: 99vw; 
+  --width: 98vw; 
 }
 
 * {
   background-color: #f7f7f5; 
-  font-family: "consolas";
+  font-family: "consolas"; 
+  scroll-behavior: smooth; 
   /* outline: 2px solid black;  */
 }
 
@@ -17,9 +18,11 @@
 
   width: var(--width); 
   height: calc(1*var(--height)); 
+  margin-bottom: calc(0.1*var(--height)); 
 }
 
 h1 {
+  z-index: 15; 
   color: black; 
   text-align: center;
   font-size: 4vw; 
@@ -29,6 +32,7 @@ h1 {
 h2 {
   text-decoration: underline;
 
+  z-index: 15;
   color: black;
   text-align: center;
   font-size: 2vw;
@@ -38,10 +42,153 @@ h2 {
 p {
   margin-top: 0vh;
 
+  z-index: 15;
   color: black; 
   text-align: auto; 
   font-size: 1.25vw; 
   font-weight: 300;
 
   line-height: 1vh; 
+}
+
+#gojo {
+  z-index: 10;
+  position: absolute; 
+  top: calc(0.1*var(--width)); 
+  left: calc(0.1*var(--width)); 
+
+  width: calc(0.15*var(--width));
+  height: calc(0.2*var(--width));
+
+  opacity: 0.75; 
+  transform: rotate(-3deg); 
+}
+
+#head {
+  z-index: 10;
+  position: absolute;
+  top: calc(0.25*var(--width));
+  left: calc(0.75*var(--width));
+
+  width: calc(0.15*var(--width));
+  height: calc(0.15*var(--width));
+
+  opacity: 0.5;
+}
+
+#gojo2 {
+  z-index: 10;
+  position: absolute;
+  top: calc(0.8*var(--width));
+  left: calc(0.2*var(--width));
+
+  width: calc(0.15*var(--width));
+  height: calc(0.15*var(--width));
+
+  opacity: 0.5;
+  transform: rotate(0deg);
+}
+
+#koi {
+  z-index: 10;
+  position: absolute;
+  top: calc(0.95*var(--width));
+  left: calc(0.65*var(--width));
+
+  width: calc(0.2*var(--width));
+  height: calc(0.2*var(--width));
+
+  opacity: 0.5;
+  transform: rotate(70deg);
+}
+
+#jelly {
+  z-index: 10;
+  position: absolute;
+  top: calc(1.2*var(--width));
+  left: calc(0.15*var(--width));
+
+  width: calc(0.2*var(--width));
+  height: calc(0.2*var(--width));
+
+  opacity: 0.5;
+  transform: rotate(30deg);
+}
+
+#pochacco {
+  z-index: 10;
+  position: absolute;
+  top: calc(1.4*var(--width));
+  left: calc(0.65*var(--width));
+
+  width: calc(0.21*var(--width));
+  height: calc(0.16*var(--width));
+
+  opacity: 0.5;
+  transform: rotate(30deg);
+}
+
+#heart {
+  z-index: 10;
+  position: absolute;
+  top: calc(0.05*var(--width));
+  left: calc(0.55*var(--width));
+
+  width: calc(0.2*var(--width));
+  height: calc(0.2*var(--width));
+
+  opacity: 0.5;
+  transform: rotate(15deg);
+}
+
+#star {
+  z-index: 10;
+  position: absolute;
+  top: calc(0.35*var(--width));
+  left: calc(0.3*var(--width));
+
+  width: calc(0.1*var(--width));
+  height: calc(0.1*var(--width));
+
+  opacity: 0.5;
+  transform: rotate(15deg);
+}
+
+#music {
+  z-index: 10;
+  position: absolute;
+  top: calc(0.4*var(--width));
+  left: calc(0.6*var(--width));
+
+  width: calc(0.15*var(--width));
+  height: calc(0.25*var(--width));
+
+  opacity: 0.75;
+  transform: rotate(15deg);
+}
+
+#star1 {
+  z-index: 10;
+  position: absolute;
+  top: calc(1.05*var(--width));
+  left: calc(0.35*var(--width));
+
+  width: calc(0.05*var(--width));
+  height: calc(0.05*var(--width));
+
+  opacity: 0.25;
+  transform: rotate(15deg);
+}
+
+#mssg {
+  z-index: 10;
+  position: absolute;
+  top: calc(1.40*var(--width));
+  left: calc(0.2*var(--width));
+
+  width: calc(0.3*var(--width));
+  height: calc(0.3*var(--width));
+
+  opacity: 0.25;
+  transform: rotate(-5deg);
 }
